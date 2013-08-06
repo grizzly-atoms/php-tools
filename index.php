@@ -531,9 +531,9 @@ if (strlen($call) > 0) {
                                                         <td><input tabindex="97" type="sessionId" size="40" name="sessionId" value="<?php echo $_SESSION['sessionId'] ?>"/>&nbsp;Refresh?
 <?php if (!$_SESSION['sessionId-refresh']) { ?>
 <input tabindex="98" type="checkbox" name="sessionId-refresh" value="true"/>
-<? } else { ?>
+<?php } else { ?>
 <input tabindex="98" type="checkbox" name="sessionId-refresh" value="true" checked="true"/>
-<? } ?>
+<?php } ?>
 </td></tr>
 <tr><td>Session Age:</td><td><?php echo round((microtime(true) - $_SESSION['sessionStartTime'])/60, 2) ?> minutes.</td></tr>
 
